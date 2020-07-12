@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="10dp"
+    tools:context=".javaFile.Drone_detail">
+
+
+    <EditText
+        android:id="@+id/editTextNumber5"
+        android:layout_width="260dp"
+        android:layout_height="40sp"
+
+        android:layout_marginTop="4dp"
+        android:backgroundTint="#2D6FDF"
+        android:ems="10"
+        android:hint="Payload "
+        android:inputType="number"
+        android:textColor="#306DD3"
+        android:textColorHint="#2D6FDF"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.536"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/editTextNumber6"
+        android:layout_width="260dp"
+        android:layout_height="40sp"
+
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#2D6FDF"
+        android:ems="10"
+        android:hint="Payload Capacity "
+        android:inputType="number"
+        android:textColor="#306DD3"
+        android:textColorHint="#2D6FDF"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/drone_img_front"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber5"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_width="100dp"
+        android:layout_height="40sp"
+
+        android:backgroundTint="#2D6FDF"
+        android:ems="10"
+        android:hint="Drone Age"
+        android:inputType="number"
+        android:textColor="#306DD3"
+        android:textColorHint="#2D6FDF"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/drone_img_front"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.771"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber6"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/drone_img_back"
+        android:layout_width="177dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintBottom_toTopOf="@+id/Take_photo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.196"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Acknowledge_No"
+        app:layout_constraintVertical_bias="0.967"
+        app:srcCompat="@drawable/drone" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+
+        app:layout_constraintBottom_toTopOf="@+id/model"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.074"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DCGA"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/DCGA"
+        android:layout_width="wrap_content"
+        android:layout_height="22sp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="248dp"
+        android:layout_marginRight="248dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Is DCGA Certified"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/model"
+        android:layout_width="260dp"
+        android:layout_height="40sp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#2D6FDF"
+        android:ems="10"
+        android:hint="Drone Model"
+        android:inputType="textPersonName"
+        android:textColor="#3F70C3"
+        android:textColorHint="#2D6FDF"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DCGA" />
+
+    <EditText
+        android:id="@+id/Acknowledge_No"
+        android:layout_width="260dp"
+        android:layout_height="40sp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="#2D6FDF"
+        android:ems="10"
+        android:hint="Drone Acknowledge Number"
+        android:inputType="number"
+        android:textColor="#306DD3"
+        android:textColorHint="#2D6FDF"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/model" />
+
+    <Button
+        android:id="@+id/Take_photo"
+        android:layout_width="250dp"
+        android:layout_height="40sp"
+        android:layout_marginBottom="16dp"
+
+        android:background="#2E5BAA"
+        android:text="Take Photo"
+        android:textColor="#FFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="122dp"
+        android:layout_height="115dp"
+        app:layout_constraintBottom_toTopOf="@+id/model"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.944"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/icon1" />
+
+    <ImageView
+        android:id="@+id/drone_img_front"
+        android:layout_width="177dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintBottom_toTopOf="@+id/Take_photo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.192"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Acknowledge_No"
+        app:layout_constraintVertical_bias="0.585"
+        app:srcCompat="@drawable/drone" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="110dp"
+        android:layout_height="25dp"
+        android:background="#2E5BAA"
+        android:text="Front Image"
+        android:textColor="#FFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.41"
+        app:layout_constraintStart_toEndOf="@+id/drone_img_front"
+        app:layout_constraintTop_toBottomOf="@+id/Acknowledge_No"
+        app:layout_constraintVertical_bias="0.522" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="110dp"
+        android:layout_height="25dp"
+        android:background="#2E5BAA"
+        android:text="Back Image"
+        android:textColor="#FFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.358"
+        app:layout_constraintStart_toEndOf="@+id/drone_img_back"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.411" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="100dp"
+        android:layout_height="40sp"
+
+
+        android:backgroundTint="#2D6FDF"
+        android:ems="10"
+        android:hint="Drone Cost "
+        android:inputType="number"
+        android:textColor="#306DD3"
+        android:textColorHint="#2D6FDF"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/drone_img_front"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.234"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber6"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/editTextNumber3"
+        android:layout_width="260dp"
+        android:layout_height="40sp"
+
+        android:backgroundTint="#2D6FDF"
+        android:ems="10"
+        android:hint="OAN "
+        android:inputType="number"
+        android:textColor="#306DD3"
+        android:textColorHint="#2D6FDF"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber4" />
+
+    <EditText
+        android:id="@+id/editTextNumber4"
+        android:layout_width="260dp"
+        android:layout_height="40sp"
+
+        android:backgroundTint="#2D6FDF"
+        android:ems="10"
+        android:hint="DAN "
+        android:inputType="number"
+        android:textColor="#306DD3"
+        android:textColorHint="#2D6FDF"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Acknowledge_No" />
+
+
+</android.support.constraint.ConstraintLayout>
